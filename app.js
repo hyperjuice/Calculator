@@ -23,7 +23,7 @@ app.get('/', function(req,res) {
 
 });	
 
-//----ADDITION----
+//----ADDITION----TEST
 
 app.post('/add', function(req, res) {
 	var x = Number(req.body.x);
