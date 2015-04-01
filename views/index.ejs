@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+   <title>Calculator With Forms</title>
+</head>
+<body>
+   <h1>Do simple arithmetic!</h1>
+   
+   <ul>
+      <% for (var i = 0; i < result.length; i++) {    %>
+       <li>Answer: <%= result[i] %></li>
+       <%   }  %> 
+   </ul>    
+   <h2>Choose your poison</h2>
+   <form action="/add" method="POST">
+       <input type="text" name="x" placeholder="Number">
+       <input type="text" name="y" placeholder="Number">
+       <input type="submit" placeholder="Submit" value="Add!">
+   </form>
+   <form action="/subt" method="POST">
+       <input type="text" name="x" placeholder="Number">
+       <input type="text" name="y" placeholder="Number">
+       <input type="submit" placeholder="Submit" value="Subtract!">
+   </form>
+   <form action="/mult" method="POST">
+       <input type="text" name="x" placeholder="Number">
+       <input type="text" name="y" placeholder="Number">
+       <input type="submit" placeholder="Submit" value="Multiply!">
+   </form>
+   <form action="/div" method="POST">
+       <input type="text" name="x" placeholder="Number">
+       <input type="text" name="y" placeholder="Number">
+       <input type="submit" placeholder="Submit" value="Divide!">
+   </form>
+</body>
+</html>
